@@ -2,7 +2,6 @@
 
 ## Project Overview 
 
-ReDaQ Assistenzsystem is a Flask-based web application integrated with Rasa Chatbot, designed to help small and medium-sized enterprises (KMU) evaluate data quality and recommend suitable Data Analytics and Predictive Analytics methods.
 
 ## Structure
 ```
@@ -52,7 +51,6 @@ redaq/
   - `translations/` → Stores localized message files.
   - `templates/` → Contains HTML templates like `chatbot.html`.
   - `static/` → CSS, JS, images for frontend.
-  - `data_quality/` → Code related to data quality computation and logic.
 
 
 ## LLM Integration: Rasa Pro + Together.ai
