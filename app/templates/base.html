@@ -1,0 +1,95 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="{{ current_language }}">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ _('SmartDQ – AI Method Advisor') }}{% endblock %}</title>
+  <meta name="description" content="AI assistant for recommending data analytics methods based on data quality.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      transition: all 0.2s ease-in-out;
+    }
+    .nav-link {
+      font-weight: 500;
+    }
+    footer {
+      font-size: 0.9rem;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <img src="{{ url_for('static', filename='header_logo.png') }}" alt="SmartDQ Logo" width="150">
+      </a>
+
+      <ul class="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" class="nav-link px-3 link-dark">{{ _('Home') }}</a></li>
+        <li class="nav-item dropdown" id="toolsDropdownWrapper">
+          <a class="nav-link px-3 dropdown-toggle link-dark" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ _('Tools') }} 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
+            <li><a class="dropdown-item" href="/chatbot">{{ _('Chatbot') }}</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#how-it-works">{{ _('How It Works') }}</a></li>
+          </ul>
+        </li>
+        <li><a href="#about" class="nav-link px-3 link-dark">{{ _('About') }}</a></li>
+        <li><a href="#contact" class="nav-link px-3 link-dark">{{ _('Contact') }}</a></li>
+      </ul>
+
+      <div class="text-end">
+        {% if current_user is defined and current_user.is_authenticated %}
+          <span class="text-secondary me-2">{{ current_user.username }}</span>
+          <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">Logout</a>
+        {% else %}
+          <a href="{{ url_for('login') }}" class="btn btn-outline-primary btn-sm me-2">Login</a>
+          <a href="{{ url_for('register') }}" class="btn btn-primary btn-sm">Sign-up</a>
+        {% endif %}
+        <a href="{{ url_for('set_language', lang_code='en') }}" class="btn btn-outline-primary btn-sm ms-2">EN</a>
+        <a href="{{ url_for('set_language', lang_code='de') }}" class="btn btn-outline-secondary btn-sm">DE</a>
+      </div>
+    </header>
+  </div>
+
+  {% block content %}{% endblock %}
+
+  <footer class="bg-white text-center border-top py-3 mt-5">
+    <div class="container">
+      <p class="mb-1 text-muted">&copy; 2025 Linda Li – {{ _('SmartDQ Project') }}</p>
+      <p class="mb-0">
+      <a href="lindali_0401@gmx.de" class="text-muted">{{ _('Email') }}</a> |
+      <a href="https://github.com/lindali0401" class="text-muted">GitHub</a> |
+      <a href="https://git.tu-berlin.de/lgreen0401" class="text-muted">GitLab</a> |
+      <a href="https://lindali0401.github.io/" class="text-muted">{{ _('Homepage') }}</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

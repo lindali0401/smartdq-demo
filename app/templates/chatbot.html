@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}SmartDQ Assistant{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='chatbot.css') }}">
+
+<div class="container mt-5 mb-5">
+  <div class="card shadow-sm p-4">
+    <h2 class="fw-bold text-primary">{{ _('Welcome to the SmartDQ Assistant 💬') }}</h2>
+    <p class="text-muted">{{ _('Upload your data and ask questions about its quality or suitable analytics methods.') }}</p>
+
+    <!-- Upload Form -->
+    <form id="uploadForm" enctype="multipart/form-data" method="post" class="mb-4">
+      <div class="input-group">
+        <input type="file" name="file" accept=".csv" class="form-control" required>
+        <button type="submit" class="btn btn-outline-primary">
+          <i class="bi bi-upload me-1"></i> {{ _('Upload CSV') }}
+        </button>
+      </div>
+    </form>
+
+    <!-- Reset-Button -->
+    <button class="btn btn-outline-secondary mb-4" onclick="resetChatbot()">
+      <i class="bi bi-arrow-clockwise me-1"></i> {{ _('Restart Conversation') }}
+    </button>
+
+    <!-- Optional loader -->
+    <div id="webchat-loader" class="text-center text-muted mb-3">
+      <div class="spinner-border text-primary" role="status"></div>
+      <p class="mt-2">{{ _('Loading chatbot...') }}</p>
+    </div>
+
+    <!-- Chat container -->
+    <div id="webchat"></div>
+  </div>
+</div>
+
+<script>
+  // Chatbot loader
+  !(function () {
+    let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+    e.src = "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js";
+    e.async = true;
+    e.onload = () => {
+      document.getElementById("webchat-loader")?.remove();
+      window.WebChat.default(
+        {
+          initPayload: "/get_started",
+          customData: { language: "{{ current_locale }}" },
+          socketUrl: "http://localhost:5005",
+          socketPath: "/socket.io/",
+          title: "{{ _('SmartDQ Assistant') }}",
+          subtitle: "{{ _('Ask me anything about data quality and analytics methods.') }}",
+          inputTextFieldHint: "{{ _('Your question...') }}",
+          embedded: true,
+          showFullScreenButton: true,
+          showSendButton: true,
+          params: {
+            storage: "local",
+            typing: true
+          }
+        },
+        document.querySelector("#webchat")
+      );
+    };
+    t.insertBefore(e, t.firstChild);
+  })();
+
+  // Upload form handler
+
+  document.getElementById("uploadForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    fetch("/upload", {
+      method: "POST",
+      body: formData
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.summary) {
+          alert("Upload successful!\n" + JSON.stringify(data.summary, null, 2));
+        } else {
+          alert("Upload failed.");
+        }
+      })
+      .catch(err => {
+        alert("An error occurred while uploading.");
+        console.error(err);
+      });
+  });
+
+  // Reset
+  function resetChatbot() {
+    localStorage.clear();
+    const existing = document.querySelector(".rw-widget-container");
+    if (existing) existing.remove();
+
+    let e = document.createElement("script");
+    e.src = "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js";
+    e.async = true;
+    e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload: "/get_started",
+          customData: { language: "{{ current_locale }}" },
+          socketUrl: "http://localhost:5005",
+          socketPath: "/socket.io/",
+          title: "{{ _('SmartDQ Assistant') }}",
+          subtitle: "{{ _('Ask me anything about data quality and analytics methods.') }}",
+          inputTextFieldHint: "{{ _('Your question...') }}",
+          embedded: true,
+          showFullScreenButton: true,
+          showSendButton: true,
+          params: {
+            storage: "local",
+            typing: true
+          }
+        },
+        document.querySelector("#webchat")
+      );
+    };
+    document.head.appendChild(e);
+  }
+</script>
+{% endblock %}
+

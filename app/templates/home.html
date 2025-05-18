@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Home – SmartDQ') }}{% endblock %}
+
+{% block content %}
+<main>
+  <!-- Hero Section -->
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold text-primary">{{ _('SmartDQ – AI-Powered Method Recommendation') }}</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-muted">
+        {{ _('Struggling to choose the right analytics method for your production data?') }}<br>
+        {{ _('SmartDQ helps you decide – based on real-world data quality dimensions.') }}
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="/chatbot" class="btn btn-primary btn-lg px-4 gap-3">{{ _('Try It Now') }}</a>
+        <a href="#how-it-works" class="btn btn-outline-secondary btn-lg px-4">{{ _('Learn More') }}</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <section class="bg-light py-5" id="how-it-works">
+    <div class="container">
+      <h2 class="text-center mb-5">{{ _('How It Works') }}</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="bi bi-clipboard-check fs-1 text-primary mb-3"></i>
+          <h5>{{ _('Step 1: Input') }}</h5>
+          <p class="text-muted">{{ _('Upload your CSV file – SmartDQ will automatically detect data quality issues.') }}</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-cpu fs-1 text-primary mb-3"></i>
+          <h5>{{ _('Step 2: Recommendation') }}</h5>
+          <p class="text-muted">{{ _('The system matches your case with analytics methods from a curated knowledge base.') }}</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-chat-dots fs-1 text-primary mb-3"></i>
+          <h5>{{ _('Step 3: Explanation') }}</h5>
+          <p class="text-muted">{{ _('Ask why, and get a research-backed explanation powered by RAG.') }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5 bg-white" id="about">
+    <div class="container text-center">
+      <h2 class="mb-4">{{ _('About This Project') }}</h2>
+      <p class="lead text-muted">
+        {{ _("SmartDQ was developed by Linda Li based on her bachelor's thesis at TU Berlin on data quality and analytics maturity in manufacturing. It combines structured method logic with AI-powered natural language explanations.") }}
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-light py-5" id="contact">
+    <div class="container text-center">
+      <h2 class="mb-4">{{ _('Contact') }}</h2>
+      <p class="text-muted">
+        {{ _('Feel free to reach out via email or visit my GitHub/GitLab/Homepage.') }}
+      </p>
+      <p>
+      <a href="lindali_0401@gmx.de" class="btn btn-outline-primary">{{ _('Email') }}</a>
+      <a href="https://github.com/lindali0401" class="btn btn-outline-dark">GitHub</a>
+      <a href="https://git.tu-berlin.de/lgreen0401" class="btn btn-outline-danger">GitLab</a>
+      <a href="https://lindali0401.github.io/" class="btn btn-outline-success">{{ _('Homepage') }}</a>
+      </p>
+    </div>
+  </section>
+</main>
+{% endblock %}

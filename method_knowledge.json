@@ -1,0 +1,495 @@
+[
+  {
+    "method": "ANOVA",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision",
+      "Understandability"
+    ],
+    "summary": "The method ANOVA requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision, Understandability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "Correlation",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Understandability"
+    ],
+    "summary": "The method Correlation requires the following data quality dimensions: Accuracy, Completeness, Consistency, Understandability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "NB",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Understandability",
+      "Consistency",
+      "Credibility"
+    ],
+    "summary": "The method NB requires the following data quality dimensions: Accuracy, Completeness, Understandability, Consistency, Credibility.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "DT",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Understandability",
+      "Traceability"
+    ],
+    "summary": "The method DT requires the following data quality dimensions: Accuracy, Completeness, Consistency, Understandability, Traceability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "Logistic",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Understandability",
+      "Traceability"
+    ],
+    "summary": "The method Logistic requires the following data quality dimensions: Accuracy, Completeness, Consistency, Understandability, Traceability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "KNN",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision"
+    ],
+    "summary": "The method KNN requires the following data quality dimensions: Accuracy, Completeness, Percision, Consistency.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "Stepwise",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision"
+    ],
+    "summary": "The method Stepwise requires the following data quality dimensions: Accuracy, Completeness, Percision, Consistency.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "BN",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Credibility",
+      "Traceability"
+    ],
+    "summary": "The method BN requires the following data quality dimensions: Accuracy, Completeness, Consistency, Credibility, Traceability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "K-Means",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision"
+    ],
+    "summary": "The method K-Means requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "PCA",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision"
+    ],
+    "summary": "The method PCA requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "AE",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision"
+    ],
+    "summary": "The method AE requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "RBM",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision"
+    ],
+    "summary": "The method RBM requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "DBM",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision"
+    ],
+    "summary": "The method DBM requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "AR",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Currentness"
+    ],
+    "summary": "The method AR requires the following data quality dimensions: Accuracy, Completeness, Consistency, Currentness.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "MA",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Currentness"
+    ],
+    "summary": "The method MA requires the following data quality dimensions: Accuracy, Completeness, Consistency, Currentness.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "ARIMA",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Currentness"
+    ],
+    "summary": "The method ARIMA requires the following data quality dimensions: Accuracy, Completeness, Consistency, Currentness.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "ARMA",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Currentness"
+    ],
+    "summary": "The method ARMA requires the following data quality dimensions: Accuracy, Completeness, Consistency, Currentness.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "LR",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Traceability",
+      "Understandability"
+    ],
+    "summary": "The method LR requires the following data quality dimensions: Accuracy, Completeness, Consistency, Traceablity, Understandability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "GLM",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Traceability",
+      "Understandability"
+    ],
+    "summary": "The method GLM requires the following data quality dimensions: Accuracy, Completeness, Consistency, Traceablity, Understandability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "Lasso",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Traceability",
+      "Understandability"
+    ],
+    "summary": "The method Lasso requires the following data quality dimensions: Accuracy, Completeness, Precision, Traceablity, Understandability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "Ridge",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Traceability",
+      "Understandability"
+    ],
+    "summary": "The method Ridge requires the following data quality dimensions: Accuracy, Completeness, Precision, Traceablity, Understandability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "Robust",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Traceability",
+      "Understandability"
+    ],
+    "summary": "The method Robust requires the following data quality dimensions: Accuracy, Completeness, Precision, Traceablity, Understandability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "RF",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Traceability"
+    ],
+    "summary": "The method RF requires the following data quality dimensions: Accuracy, Completeness, Consistency, Traceablity.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "RF Regression",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Traceability"
+    ],
+    "summary": "The method RF Regression requires the following data quality dimensions: Accuracy, Completeness, Consistency, Traceability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "GBM",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Efficiency",
+      "Traceability"
+    ],
+    "summary": "The method GBM requires the following data quality dimensions: Accuracy, Completeness, Precision, Efficiency, Traceability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "SVM",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision",
+      "Traceability"
+    ],
+    "summary": "The method SVM requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision, Traceability.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "SVR",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Consistency"
+    ],
+    "summary": "The method SVR requires the following data quality dimensions: Accuracy, Completeness, Precision, Consistency.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "MLP",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Consistency"
+    ],
+    "summary": "The method MLP requires the following data quality dimensions: Accuracy, Completeness, Precision, Consistency.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "DNN",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Efficiency",
+      "Precision"
+    ],
+    "summary": "The method DNN requires the following data quality dimensions: Accuracy, Completeness, Consistency, Efficiency, Precision.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "BPNN",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Consistency"
+    ],
+    "summary": "The method BPNN requires the following data quality dimensions: Accuracy, Completeness, Precision, Consistency.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "CNN",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Consistency",
+      "Efficiency"
+    ],
+    "summary": "The method CNN requires the following data quality dimensions: Accuracy, Completeness, Precision, Consistency, Efficiency.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "RNN",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Precision",
+      "Consistency"
+    ],
+    "summary": "The method RNN requires the following data quality dimensions: Accuracy, Completeness, Precision, Consistency.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "LSTM",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Currentness",
+      "Efficiency",
+      "Precision"
+    ],
+    "summary": "The method LSTM requires the following data quality dimensions: Accuracy, Completeness, Consistency, Efficiency, Currentness, Precision.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  },
+  {
+    "method": "GRU",
+    "category": "",
+    "requires": [
+      "Accuracy",
+      "Completeness",
+      "Consistency",
+      "Precision",
+      "Currentness"
+    ],
+    "summary": "The method GRU requires the following data quality dimensions: Accuracy, Completeness, Consistency, Precision, Currentness.",
+    "not_suitable": "",
+    "pros": [],
+    "cons": []
+  }
+]

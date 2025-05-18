@@ -1,0 +1,70 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "ask_llama": 1,
+        "back": 2,
+        "bot_challenge": 3,
+        "deny": 4,
+        "get_started": 5,
+        "goodbye": 6,
+        "greet": 7,
+        "mood_great": 8,
+        "mood_unhappy": 9,
+        "nlu_fallback": 10,
+        "out_of_scope": 11,
+        "restart": 12,
+        "session_end": 13,
+        "session_start": 14,
+        "silence_timeout": 15
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "action_send_text": 11,
+        "...": 12,
+        "action_extract_slots": 13,
+        "action_cancel_flow": 14,
+        "action_correct_flow_slot": 15,
+        "action_clarify_flows": 16,
+        "action_run_slot_rejections": 17,
+        "action_clean_stack": 18,
+        "action_trigger_search": 19,
+        "action_trigger_chitchat": 20,
+        "action_reset_routing": 21,
+        "action_hangup": 22,
+        "action_repeat_bot_messages": 23,
+        "action_block_digression": 24,
+        "action_continue_digression": 25,
+        "action_ask_llama": 26,
+        "utter_cheer_up": 27,
+        "utter_did_that_help": 28,
+        "utter_get_started": 29,
+        "utter_goodbye": 30,
+        "utter_greet": 31,
+        "utter_happy": 32,
+        "utter_iamabot": 33
+      },
+      "entities": {},
+      "slots": {
+        "language_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

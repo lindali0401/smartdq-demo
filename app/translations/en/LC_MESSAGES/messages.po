@@ -1,0 +1,144 @@
+# English translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-03-19 10:16+0100\n"
+"PO-Revision-Date: 2025-03-19 10:17+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+msgid "SmartDQ – AI Method Advisor"
+msgstr "SmartDQ – AI Method Advisor"
+
+msgid "AI assistant for recommending data analytics methods based on data quality."
+msgstr "AI assistant for recommending data analytics methods based on data quality."
+
+msgid "SmartDQ Logo"
+msgstr "SmartDQ Logo"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Tools"
+msgstr "Tools"
+
+msgid "Chatbot"
+msgstr "Chatbot"
+
+msgid "How It Works"
+msgstr "How It Works"
+
+msgid "About"
+msgstr "About"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Sign-up"
+msgstr "Sign-up"
+
+msgid "SmartDQ Project"
+msgstr "SmartDQ Project"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Home – SmartDQ"
+msgstr "Home – SmartDQ"
+
+msgid "SmartDQ – AI-Powered Method Recommendation"
+msgstr "SmartDQ – AI-Powered Method Recommendation"
+
+msgid "Struggling to choose the right analytics method for your production data?"
+msgstr "Struggling to choose the right analytics method for your production data?"
+
+msgid "SmartDQ helps you decide – based on real-world data quality dimensions."
+msgstr "SmartDQ helps you decide – based on real-world data quality dimensions."
+
+msgid "Try It Now"
+msgstr "Try It Now"
+
+msgid "Learn More"
+msgstr "Learn More"
+
+msgid "How It Works"
+msgstr "How It Works"
+
+msgid "Step 1: Input"
+msgstr "Step 1: Input"
+
+msgid "Upload your CSV file – SmartDQ will automatically detect data quality issues."
+msgstr "Upload your CSV file – SmartDQ will automatically detect data quality issues."
+
+msgid "Step 2: Recommendation"
+msgstr "Step 2: Recommendation"
+
+msgid "The system matches your case with analytics methods from a curated knowledge base."
+msgstr "The system matches your case with analytics methods from a curated knowledge base."
+
+msgid "Step 3: Explanation"
+msgstr "Step 3: Explanation"
+
+msgid "Ask why, and get a research-backed explanation powered by RAG."
+msgstr "Ask why, and get a research-backed explanation powered by RAG."
+
+msgid "About This Project"
+msgstr "About This Project"
+
+msgid "SmartDQ was developed by Linda Li based on her bachelor's thesis at TU Berlin on data quality and analytics maturity in manufacturing. It combines structured method logic with AI-powered natural language explanations."
+msgstr "SmartDQ was developed by Linda Li based on her bachelor's thesis at TU Berlin on data quality and analytics maturity in manufacturing. It combines structured method logic with AI-powered natural language explanations."
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Homepage"
+msgstr "Homepage"
+
+msgid "Feel free to reach out via email or visit my GitHub/GitLab/Homepage."
+msgstr "Feel free to reach out via email or visit my GitHub/GitLab/Homepage."
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Welcome to the SmartDQ Assistant 💬"
+msgstr "Welcome to the SmartDQ Assistant 💬"
+
+msgid "Upload your data and ask questions about its quality or suitable analytics methods."
+msgstr "Upload your data and ask questions about its quality or suitable analytics methods."
+
+msgid "Upload CSV"
+msgstr "Upload CSV"
+
+msgid "Restart Conversation"
+msgstr "Restart Conversation"
+
+msgid "Loading chatbot..."
+msgstr "Loading chatbot..."
+
+msgid "SmartDQ Assistant"
+msgstr "SmartDQ Assistant"
+
+msgid "Ask me anything about data quality and analytics methods."
+msgstr "Ask me anything about data quality and analytics methods."
+
+msgid "Your question..."
+msgstr "Your question..."
+

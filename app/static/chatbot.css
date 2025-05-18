@@ -1,0 +1,65 @@
+#webchat {
+    height: 70vh;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.rw-widget-container,
+.rw-conversation-container {
+  height: 100% !important;
+  max-height: 100% !important;
+  overflow-y: auto !important;
+}
+
+.rw-send {
+    background: transparent !important;
+    border: none !important;
+    padding: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rw-send-icon svg {
+    fill: #0d6efd !important;
+    width: 16px;
+    height: 16px;
+}
+
+.rw-send:hover .rw-send-icon svg {
+    fill: #0b5ed7 !important;
+}
+
+
+.rw-footer {
+    background-color: #f6f8fa !important; 
+    overflow: hidden !important;
+    border-top: 1px solid #ddd;          
+    position: relative;
+}
+
+
+.rw-new-message {
+background-color: transparent !important;
+border: none !important;
+box-shadow: none !important;
+outline: none !important;
+resize: none !important;
+width: 100% !important;
+height: auto !important;
+line-height: 1.4;
+box-sizing: border-box;
+}
+
+
+.rw-send {
+flex-shrink: 0;
+}
+   
+.rw-footer, .rw-new-message {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+}
+  

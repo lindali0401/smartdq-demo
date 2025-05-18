@@ -1,0 +1,35 @@
+
+<html lang="{{ current_language }}">
+
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-5">
+    <h2 class="text-center mb-4">{{ _('Registrieren') }}</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {% if error %}
+            <div class="alert alert-danger text-center" role="alert">
+                {{ error }}
+            </div>
+            {% endif %}
+            <form method="POST" action="{{ url_for('register') }}">
+                <div class="mb-3">
+                    <label for="username" class="form-label">{{ _('Benutzername') }}</label>
+                    <input type="text" class="form-control" id="username" name="username"
+                           value="{{ username or '' }}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">{{ _('Passwort') }}</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirm" class="form-label">{{ _('Passwort wiederholen') }}</label>
+                    <input type="password" class="form-control" id="confirm" name="confirm" required>
+                </div>
+                <button type="submit" class="btn btn-primary">{{ _('Registrieren') }}</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
