@@ -37,7 +37,7 @@ This demo project showcases the tech stack I worked with as a student assistant 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/SmartDQ.git
+git clone https://github.com/lindali0401/smartdq-demo.git
 cd SmartDQ
 ```
 
