@@ -1,6 +1,12 @@
-# SmartDQ
+# SmartDQ – AI-Powered Method Recommendation
 
-## Project Overview 
+SmartDQ is an AI-powered web application that helps users choose suitable data analytics methods based on the quality of their uploaded CSV datasets. It combines a rule-based judgment of data quality dimensions with intelligent reasoning via LLMs.
+
+This demo project showcases the tech stack I worked with as a student assistant at TU Berlin, and incorporates key concepts from my bachelor's thesis on method cataloging in industrial data analytics.
+
+## Preview
+
+
 
 
 ## Structure
