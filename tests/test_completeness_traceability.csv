@@ -1,0 +1,6 @@
+A,B,Name,Value
+1.0,3.0,Alice,100
+2.0,4.0,Bob,200
+,5.0,Charlie,300
+4.0,6.0,David,400
+5.0,,Eve,500
