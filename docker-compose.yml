@@ -1,0 +1,52 @@
+services:
+  rasa_actions:
+    build:
+      context: ./rasa/actions
+      dockerfile: Dockerfile.actions
+    container_name: rasa_actions
+    ports:
+      - "5055:5055"
+    environment:
+      - RASA_PRO_LICENSE=${RASA_PRO_LICENSE}
+
+  rasa_server:
+    build:
+      context: ./rasa
+      dockerfile: Dockerfile.rasa
+    container_name: rasa_server
+    ports:
+      - "5005:5005"
+    environment:
+      - RASA_PRO_LICENSE=${RASA_PRO_LICENSE}
+    depends_on:
+      - rasa_actions
+    volumes:
+      - ./rasa:/app
+      - ./rasa/endpoints.yml:/app/endpoints.yml
+
+  rag_server:
+    build:
+      context: .
+      dockerfile: Dockerfile.rag
+    container_name: rag_server
+    ports:
+      - "5056:5056"
+    environment:
+      - TOGETHER_API_KEY=${TOGETHER_API_KEY}
+    volumes:
+      - .:/app
+    command: python rag_server.py
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: frontend
+    ports:
+      - "5500:5000"
+    depends_on:
+      - rag_server
+      - rasa_server
+    volumes:
+      - .:/app
+    command: python run.py

@@ -1,0 +1,11 @@
+FROM python:3.10
+
+WORKDIR /app
+
+COPY requirements_rasa.txt .
+RUN pip install --no-cache-dir -r requirements_rasa.txt
+
+COPY . /app
+
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--debug", "--connector", "socketio"]
+

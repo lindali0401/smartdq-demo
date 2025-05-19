@@ -42,7 +42,8 @@ class ActionQueryHaystack(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         user_message = tracker.latest_message.get("text")
-        haystack_api_url = "http://localhost:5056/chat"  # 你的 Flask server 地址
+        # llm_api_url = "http://localhost:5056/chat"  # 你的 Flask server 地址
+        llm_api_url = "http://rag_server:5056/chat"
 
         # 读取之前推荐的算法和用户维度
         recommended_methods = tracker.get_slot("recommended_methods") or []
@@ -50,7 +51,7 @@ class ActionQueryHaystack(Action):
 
         try:
             response = requests.post(
-                haystack_api_url,
+                llm_api_url,
                 json={
                     "prompt": user_message,
                     "recommended_methods": recommended_methods,

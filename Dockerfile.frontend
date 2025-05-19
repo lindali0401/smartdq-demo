@@ -1,0 +1,10 @@
+FROM python:3.10
+
+WORKDIR /app
+
+COPY requirements_rag.txt .
+RUN pip install --no-cache-dir -r requirements_rag.txt
+
+COPY . /app
+
+CMD ["python", "run.py"]

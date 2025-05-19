@@ -1,0 +1,8 @@
+rasa-pro==3.12.6
+rasa-sdk==3.12.0
+python-socketio==5.13.0
+sanic==22.12.0
+sanic-cors==2.2.0
+sanic-jwt==1.8.0
+requests
+aiohttp

@@ -222,29 +222,3 @@ Then open `http://localhost:5000/chatbot` in your browser to interact with the c
 - To share trained models, upload the `.tar.gz` file via tubCloud or other cloud service
 
 
-## TO DO
-
-### Add LLaMA 3.2 fallback for undefined Rasa NLU intents
-
-Enable Rasa to call LLaMA 3.2 when user input does not match any defined NLU intent.
-
-### Evaluate Rasa + RAGFlow vs. Rasa + LLaMA 3.2
-
-Compare two chatbot backends to decide which better fits our assistant system:
-
-1. Rasa + RAGFlow (document-based Q&A with structured retrieval)
-2. Rasa + LLaMA 3.2 (LLM-powered dialogue generation)
-
-Decide based on: setup complexity, maintenance effort, and use case coverage
-
-### Evaluate if Botpress can replace the current chatbot setup
-
-Assess whether Botpress is a viable alternative to the current Rasa-based chatbot architecture.
-
-1. Can Botpress handle structured, guided conversations (e.g., for maturity assessment)?
-2. Can it connect to external services like RAGFlow, Neo4j, or custom Python APIs?
-3. Does it support LLM integration (e.g., with LLaMA 3.2 or OpenAI)?
-4. How flexible is Botpress in terms of multilingual support and UI embedding?
-5. What are the data privacy implications (self-hosting, GDPR compliance)?
-6. Is Botpress easier to maintain or scale than Rasa?
-

@@ -42,7 +42,8 @@ class ActionRecommendMethod(Action):
 
         try:
             # response = requests.get("http://localhost:5000/summary")
-            response = requests.get("http://127.0.0.1:5000/summary")
+            # response = requests.get("http://127.0.0.1:5000/summary")
+            response = requests.get("http://frontend:5000/summary")
             if response.status_code != 200:
                 dispatcher.utter_message(text="Sorry, I couldn't retrieve your data summary.")
                 return []

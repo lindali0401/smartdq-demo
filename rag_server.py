@@ -4,6 +4,8 @@ import os
 import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import time
+import threading
 
 app = Flask(__name__)
 client = Together(api_key=os.environ.get("TOGETHER_API_KEY"))
@@ -83,6 +85,17 @@ def chat():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+def warm_up_llm():
+    print("🔄 Starting LLM warm-up...")
+    try:
+        time.sleep(1)  # 稍等 Flask 服务稳定
+        dummy_prompt = "What is a suitable method if my data has strong accuracy and completeness?"
+        _ = call_llama3_with_prompt(dummy_prompt)
+        print("✅ LLM Warm-up completed.")
+    except Exception as e:
+        print(f"⚠️ LLM Warm-up failed: {e}")
+
 if __name__ == "__main__":
+    threading.Thread(target=warm_up_llm).start()
     app.run(host="0.0.0.0", port=5056)
 
